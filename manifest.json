@@ -1,0 +1,15 @@
+{
+    "name": "Presidential Word Replacer",
+    "version": "1.0.0",
+    "description": "Replaces Joe Biden with Sleepy Joe And Donald Trump with Donald Dump",
+    "manifest_version": 3,
+    "author": "Benjamin J Lane",
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "all_frames": true,
+            "js": ["word_replace.js"],
+            "run_at": "document_end"
+        }
+    ]
+}
